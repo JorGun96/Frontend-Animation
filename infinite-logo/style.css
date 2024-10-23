@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+@keyframes slides {
+    form{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logo-slide{
+    display: inline-block;
+    animation: 5s slides infinite linear;
+}
+
+.logo-slide img{
+    height: 50px;
+    margin: 0 40px;
+}
