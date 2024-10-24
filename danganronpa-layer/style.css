@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-layer1{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.main-layer1 > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .10 cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.main-layer1 > div:hover{
+    flex: 5;
+}
+
+
+.main-layer2{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.main-layer2 > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .10 cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.main-layer2 > div:hover{
+    flex: 5;
+}

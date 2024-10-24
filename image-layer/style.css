@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.camera-galeri{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.camera-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.camera-galeri > div:hover{
+    flex: 5;
+}

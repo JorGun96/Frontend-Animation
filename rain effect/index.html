@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+   var nbDrop = 800;
+   
+   function randRange(maxNum, minNum) {
+    return (Math.floor(Math.random(10) * (maxNum - minNum + 1)) + minNum);
+   }
+   
+   function createRain() {
+    for (i = 0; i < nbDrop; i++) {
+     
+     var dropLeft = randRange(0, 3000);
+     var dropTop = randRange(-1000, 1000);
+     $('.rain').append('<div class="drop" id="drop'+ i +'"></div>');
+     $('#drop' + i).css('left', dropLeft);
+     $('#drop' + i).css('top', dropTop); 
+    }
+   }
+  </script>
+ </head>
+ <body onload="createRain()">
+  <section id="rain" class="rain"></section>
+</body>
+</html>
